@@ -5,9 +5,21 @@
   padding: 0.2em 0;
 }
 
+@font-face {
+    font-family: 'unica_oneregular';
+    src: url('../fonts/unicaone-regular-webfont.eot');
+    src: url('../fonts/unicaone-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/unicaone-regular-webfont.woff2') format('woff2'),
+         url('../fonts/unicaone-regular-webfont.woff') format('woff'),
+         url('../fonts/unicaone-regular-webfont.ttf') format('truetype'),
+         url('../fonts/unicaone-regular-webfont.svg#unica_oneregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
 	overflow: hidden;
-	font-family:'Unica One', cursive;
+	font-family:'unica_oneregular', sans;
 	background: url('../images/bg.jpg') no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -37,12 +49,6 @@ body {
 	background-repeat:no-repeat;
 	background-position:center;
 	margin:-100px 0 0 -100px; /* is width and height divided by two */
-}
-
-
-@font-face{
-	font-family: 'Unica One';
-	src: url('../fonts/UnicaOne-Regular.ttf') format('truetype');
 }
 
 .noshow{
