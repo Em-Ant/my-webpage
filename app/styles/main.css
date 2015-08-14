@@ -5,85 +5,204 @@
   padding: 0.2em 0;
 }
 
-/* Space out content a bit */
 body {
-  padding-top: 20px;
-  padding-bottom: 20px;
+	overflow: hidden;
+	font-family:'Unica One', cursive;
+	background: url('../images/bg.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-left: 15px;
-  padding-right: 15px;
+/* Preloader */
+#preloader {
+	position: fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background-color:white; /* change if the mask should have another color then white */
+	z-index:99; /* makes sure it stays on top */
 }
 
-/* Custom page header */
-.header {
-  border-bottom: 1px solid #e5e5e5;
+
+#status {
+	width:200px;
+	height:200px;
+	position:absolute;
+	left:50%; /* centers the loading animation horizontally one the screen */
+	top:50%; /* centers the loading animation vertically one the screen */
+	background-image:url(../images/status.gif); /* path to your loading animation */
+	background-repeat:no-repeat;
+	background-position:center;
+	margin:-100px 0 0 -100px; /* is width and height divided by two */
 }
 
-/* Make the masthead heading the same height as the navigation */
-.header h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 40px;
-  padding-bottom: 19px;
+
+@font-face{
+	font-family: 'Unica One';
+	src: url('../fonts/UnicaOne-Regular.ttf') format('truetype');
 }
 
-/* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
+.noshow{
+    	opacity:0;
 }
 
-.container-narrow > hr {
-  margin: 30px 0;
+    
+#bg {
+  background : no-repeat center center fixed rgba(30,30,30,0.6);
+  background-size: cover;
+  position:fixed;
+  top:0;
+  width:100%;
+  height: 100%;
+  z-index: -1;
+  opacity:0;
 }
 
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
+
+#home_cont{
+	text-align:center;
+	color:white;
+	margin-top:20px;
 }
 
-.jumbotron .btn {
-  font-size: 21px;
-  padding: 14px 24px;
+
+#logo{
+	position: relative;
+	margin:15px auto;
+  	width: 90%;
+  	max-width: 400px;	
+  	top: -100px; /* Init Point dor Animation*/
 }
 
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
+/*STICKY FOOTER*/
+html,body{
+	height:100%;
 }
 
-.marketing p + h4 {
-  margin-top: 28px;
+.sticky-wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -80px;
 }
+
+footer, .push{
+	height:80px;
+}
+/*END STICKY FOOTER*/
+
+
+/*HOME LINKS*/
+.main-links {
+	height: 48px;
+	width: 48px;
+	background-image: url(../images/icons.png);
+	display: inline-block;
+}
+
+.links{
+	margin:10px auto;
+	position:relative;
+	left: -55px;
+}
+
+.links ul li{
+	padding: 0px;
+}
+
+.not-active {
+   pointer-events: none;
+   cursor: default;
+}
+
+
+.main-links.soundcloud{
+	background-position: -192px 0;
+}
+
+.main-links.deviantart{
+	background-position:-240px 0;
+}
+
+.main-links.git{
+	background-position: 0px 0px;
+}
+
+.main-links.fcc{
+	background-position: -48px 0;
+}
+
+.main-links.cdp{
+	background-position:-144px 0;
+}
+
+.main-links.ca{
+	background-position: -96px 0;
+}
+
+
+.main-links:active {
+	box-shadow: 0px 0px 4px 0px rgba(255,255,255,0.8);
+}
+
+a:active, a:focus{
+	outline:none;
+}
+/*--------*/
+
+#info h1 {
+	font-size:20px;
+	padding: 10px;
+	border: solid 2px white;
+	width:90%;
+	max-width:320px;
+	margin:10px auto;
+}
+
+#info p{
+	width:90%;
+	font-size:16px;
+	max-width:320px;
+	margin: 10px auto ;
+}
+
+
+footer h3{
+	position:relative;
+	text-align:center;
+	margin: auto;
+	color:#ccc;
+	height:20px;
+	top:30px;
+	font-size:0.8em;
+	padding:0 5px;
+}
+
+footer a{
+	color:white;
+}
+	
+
+
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
-
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
+	.container {
+	max-width: 730px;
+	}
+	
+	#home_cont{
+		margin-top: 100px;
+	}
+	
+	#info h1{
+		font-size : 30px;
+	}
+	
+	#info p{
+		font-size : 18px;
+	}
 }
