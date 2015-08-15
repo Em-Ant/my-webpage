@@ -55,6 +55,11 @@ body {
     	opacity:0;
 }
 
+.arial {
+	font-family : Arial,sans;
+}
+
+
     
 #bg {
   background : no-repeat center center fixed rgba(20,20,20,0.7);

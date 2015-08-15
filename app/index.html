@@ -35,8 +35,9 @@
 	</div>
 	<div id="bg"></div>
     <div class="container sticky-wrapper">
-	  	<!-- Modal -->
-		<div class="modal fade" id="contacts-modal" tabindex="-1" role="dialog" aria-labelledby="Contacts">
+    
+	  	<!-- Modal Contacts Form-->
+		<div class="modal fade" id="contacts-modal" tabindex="-1" role="dialog">
 		  <div class="modal-dialog" role="document">
 			<div class="modal-content">
 			  <div class="modal-header">
@@ -47,11 +48,14 @@
 				<form>
 				  <div class="form-group">
 					<label for="recipient-name" class="control-label">From:</label>
-					<input type="text" class="form-control" id="from-email">
+					<div class="input-group">
+						<span class="input-group-addon arial">@</span>
+						<input type="email" class="form-control arial" id="email-input" placeholder="Your email here">
+					</div>
 				  </div>
 				  <div class="form-group">
 					<label for="message-text" class="control-label">Message:</label>
-					<textarea class="form-control" id="message-text"></textarea>
+					<textarea class="form-control arial" id="message-text" placeholder="Your message here..."></textarea>
 				  </div>
 				</form>
 			  </div>
