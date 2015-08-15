@@ -193,6 +193,10 @@ footer h3{
 footer a{
 	color:white;
 }
+
+footer a:hover{
+	color: white;
+}
 	
 
 
