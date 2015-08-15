@@ -35,10 +35,39 @@
 	</div>
 	<div id="bg"></div>
     <div class="container sticky-wrapper">
+	  	<!-- Modal -->
+		<div class="modal fade" id="contacts-modal" tabindex="-1" role="dialog" aria-labelledby="Contacts">
+		  <div class="modal-dialog" role="document">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="exampleModalLabel">New message</h4>
+			  </div>
+			  <div class="modal-body">
+				<form>
+				  <div class="form-group">
+					<label for="recipient-name" class="control-label">From:</label>
+					<input type="text" class="form-control" id="from-email">
+				  </div>
+				  <div class="form-group">
+					<label for="message-text" class="control-label">Message:</label>
+					<textarea class="form-control" id="message-text"></textarea>
+				  </div>
+				</form>
+			  </div>
+			  <div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary">Send message</button>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		
+		
 	  	<div id="home_cont">
-	  		<img id="logo" class="noshow" src="./images/logo.svg" alt="description" title="tool tip"/>
+	  		<img id="logo" class="noshow" src="./images/logo.svg" alt="description" title="Emanuele's Logo"/>
 	  		<heading id="info" class="noshow">
-	  			<h1>Hello, I am Emanuele</h1>
+				<h1>Hello, I am Emanuele</h1>
 	  			<p>Have a look at my web footprint:</p>
 	  		</heading>
 	  		<nav class="links noshow">
@@ -52,13 +81,22 @@
 					<li><a class="main-links soundcloud"  href="http://www.soundcloud.com/tcoa/" alt="Emanuele on Soundcloud" title="Emanuele on Soundcloud"></a></li>
 					<li><a class="main-links deviantart" href="http://theclubofastronauts.deviantart.com/" alt="Emanuele on Deviantart" title="Emanuele on Deviantart"></a></li>
 		  		</ul>
+		  		<ul class="list-inline">
+		  			<li><a class="main-links mail" href="#contacts" data-toggle="modal"  title="Click here to contact Me!" data-target="#contacts-modal"></a></li>	
+		  		</ul>
 	  		</nav>
 	  	</div>
+		
 	  	<div class="push"></div>
     </div>
 	<footer class="noshow">
 		<h3>Design &amp; Development by EmAnt, using <a href="http://en.wikipedia.org/wiki/Free_and_open-source_software" alt="Free Open Source Software" title="Free Open Source Software" >FOSS</a> - Background Image  from <a href="http://negativespace.co/">Negative Space</a> - Copyright &copy;2015 by EmAnt</h3>
 	</footer>    
+	
+
+
+
+
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
