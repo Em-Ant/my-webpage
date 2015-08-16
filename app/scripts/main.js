@@ -38,27 +38,28 @@ $(document).ready(function() { // makes sure the whole site is loaded
     	});
     	
 	
-	$('#contacts-form').validate({
+	/**
+	* Contacts Form validation setup
+	*/
+	
+	var validator = $('#contacts-form').validate({
 		rules:{
 			email : {
 				required : true,
 				email : true
 			},
-			message : {
-				required : true,
-				minlength :4
-			}
+			message : 'required'
 		},
 		errorClass : 'has-error',
 		
 		validClass : 'has-success',
 		
 		highlight : function(el,errClass,validClass){
-			$(el).parent().addClass(errClass).removeClass(validClass);
+			$('#'+$(el).attr('name')+'-group').addClass(errClass).removeClass(validClass);
 		},
 		
 		unhighlight : function(el,errClass,validClass){
-			$(el).parent().removeClass(errClass).addClass(validClass);
+			$('#'+$(el).attr('name')+'-group').removeClass(errClass).addClass(validClass);
 		},
 
 		onkeyup: function(element) { 
@@ -73,6 +74,14 @@ $(document).ready(function() { // makes sure the whole site is loaded
     	}
 	});
 	
+	function formReset(){
+		validator.resetForm();
+		$('.form-group').removeClass('has-error').removeClass('has-success');
+		$('#message-text').val('');
+		$('#email-input').val('');
+	};
+	
+	$('.reset').click(formReset);
 });
 
 
