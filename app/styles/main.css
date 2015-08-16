@@ -59,7 +59,9 @@ body {
 	font-family : Arial,sans;
 }
 
-
+.err-label{
+	padding : 10px 0 5px 10px;
+}
     
 #bg {
   background : no-repeat center center fixed rgba(20,20,20,0.7);

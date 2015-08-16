@@ -9,7 +9,6 @@
 **************************************************************/
 
 
-
 $(document).ready(function() { // makes sure the whole site is loaded
 	
 	var active = "home";
@@ -37,6 +36,43 @@ $(document).ready(function() { // makes sure the whole site is loaded
     	},function(){
     		$(this).css('background-position',bgPos[0]+' '+bgPos[1]);
     	});
+    	
+	
+	$('#contacts-form').validate({
+		rules:{
+			email : {
+				required : true,
+				email : true
+			},
+			message : {
+				required : true,
+				minlength :4
+			}
+		},
+		errorClass : 'has-error',
+		
+		validClass : 'has-success',
+		
+		highlight : function(el,errClass,validClass){
+			$(el).parent().addClass(errClass).removeClass(validClass);
+		},
+		
+		unhighlight : function(el,errClass,validClass){
+			$(el).parent().removeClass(errClass).addClass(validClass);
+		},
+
+		onkeyup: function(element) { 
+			$(element).valid();		
+		},
+		errorPlacement: function(error,element){
+			$('#'+$(element).attr('name')+'-err').append(error);
+		},
+
+		submitHandler: function(form) {
+    		//form.submit();
+    	}
+	});
+	
 });
 
 

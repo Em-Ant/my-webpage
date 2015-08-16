@@ -45,24 +45,31 @@
 				<h4 class="modal-title" id="exampleModalLabel">New message</h4>
 			  </div>
 			  <div class="modal-body">
-				<form>
+				<form method="post" action="" id="contacts-form" novalidate="novalidate">
+				  
 				  <div class="form-group">
-					<label for="recipient-name" class="control-label">From:</label>
+					<label for="email" class="control-label">From:</label>
 					<div class="input-group">
 						<span class="input-group-addon arial">@</span>
-						<input type="email" class="form-control arial" id="email-input" placeholder="Your email here">
+						<input type="text" class="form-control arial" id="email-input" placeholder="Your email here" name="email">
 					</div>
+					<div id="email-err" class="err-label"></div>
 				  </div>
+				  
 				  <div class="form-group">
-					<label for="message-text" class="control-label">Message:</label>
-					<textarea class="form-control arial" id="message-text" placeholder="Your message here..."></textarea>
+					<label for="message" class="control-label">Message:</label>
+					<textarea class="form-control arial" id="message-text" placeholder="Your message here..." name="message"></textarea>
+				  	<div id="message-err" class="err-label"></div>
 				  </div>
+				  
+				<div class="modal-footer">
+					<div type="button" class="btn btn-default" data-dismiss="modal">Close</div>
+					<input type="submit" class="btn btn-primary" value="Send Message" >
+			  	</div>
+			  	
 				</form>
 			  </div>
-			  <div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-				<button type="button" class="btn btn-primary">Send message</button>
-			  </div>
+
 			</div>
 		  </div>
 		</div>
@@ -106,6 +113,7 @@
     <!-- bower:js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/jquery-validation/dist/jquery.validate.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
