@@ -71,7 +71,7 @@ $(document).ready(function() { // makes sure the whole site is loaded
 
 		submitHandler: function(form) {
 		 	var data = {
-				"action": "test"
+				"action": "ajax-test"
 			};
 			data = $(form).serialize() + "&" + $.param(data);
     		$.ajax({
@@ -80,7 +80,7 @@ $(document).ready(function() { // makes sure the whole site is loaded
 				url: "http://local.test.it/request.php", //Relative or absolute path to response.php file
 				data: data,
 				success: function(data) {
-					alert("Form submitted successfully.\nReturned json: " + data["json"]);
+					console.log(data);
 				},
 				error:function(xhr,err){
 					console.log(xhr,err);
