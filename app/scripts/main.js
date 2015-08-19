@@ -70,8 +70,23 @@ $(document).ready(function() { // makes sure the whole site is loaded
 		},
 
 		submitHandler: function(form) {
-    		//form.submit();
-    	}
+		 	var data = {
+				"action": "test"
+			};
+			data = $(form).serialize() + "&" + $.param(data);
+    		$.ajax({
+				type: "POST",
+				dataType: "json",
+				url: "http://local.test.it/request.php", //Relative or absolute path to response.php file
+				data: data,
+				success: function(data) {
+					alert("Form submitted successfully.\nReturned json: " + data["json"]);
+				},
+				error:function(xhr,err){
+					console.log(xhr,err);
+				}
+    		});
+		}
 	});
 	
 	function formReset(){
