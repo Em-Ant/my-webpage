@@ -72,7 +72,7 @@ $(document).ready(function() { // makes sure the whole site is loaded
 		submitHandler: function(form) {
 			$('.modal-footer .btn').prop('disabled', 'disabled').addClass('disabled');
 			var data = {
-				'action': 'some-secret-request'
+				'action': 'secret-action'
 			};
 			data = $(form).serialize() + '&' + $.param(data);
 			$.ajax({
