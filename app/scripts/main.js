@@ -70,20 +70,32 @@ $(document).ready(function() { // makes sure the whole site is loaded
 		},
 
 		submitHandler: function(form) {
+			
+			$('.modal-footer .btn').prop('disabled','disabled').addClass('disabled');
 		 	var data = {
-				"action": "ajax-test"
+				"action": "some-secret-request"
 			};
 			data = $(form).serialize() + "&" + $.param(data);
     		$.ajax({
 				type: "POST",
 				dataType: "json",
-				url: "http://local.test.it/request.php", //Relative or absolute path to response.php file
+				url: "./request.php", //Relative or absolute path to response.php file
 				data: data,
-				success: function(data) {
-					console.log(data);
+				success : function(){
+					
+					$('#message-tx').hide().append($('<label class="text-success">Message Sent !</label>')).fadeIn();
+					formReset();
+					setTimeout(function(){
+						$('.modal-footer .btn').prop('disabled','').removeClass('disabled');
+						$('#message-tx').fadeOut(function(){$(this).empty()});
+					},2000);
 				},
 				error:function(xhr,err){
-					console.log(xhr,err);
+					$('#message-tx').hide().append($('<label class="text-danger">Unauthorized Operation !</label>')).fadeIn();
+					setTimeout(function(){
+						$('.modal-footer .btn').prop('disabled','').removeClass('disabled');
+						$('#message-tx').fadeOut(function(){$(this).empty()});
+					},2000);
 				}
     		});
 		}
@@ -96,7 +108,8 @@ $(document).ready(function() { // makes sure the whole site is loaded
 		$('#email-input').val('');
 	};
 	
-	$('.reset').click(formReset);
+	$('.modal-footer .btn').prop('disabled','').removeClass('disabled');
+	formReset();
 });
 
 
