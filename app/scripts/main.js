@@ -71,6 +71,7 @@ $(document).ready(function() { // makes sure the whole site is loaded
 
 		submitHandler: function(form) {
 			$('.modal-footer .btn').prop('disabled', 'disabled').addClass('disabled');
+			$('#message-tx').hide().append($('<label class="text-primary">Waiting for Response...</label>')).fadeIn();
 			var data = {
 				'action': 'secret-action'
 			};
@@ -81,8 +82,7 @@ $(document).ready(function() { // makes sure the whole site is loaded
 				url: './request.php', //Relative or absolute path to response.php file
 				data: data,
 				success: function(){
-
-					$('#message-tx').hide().append($('<label class="text-success">Message Sent !</label>')).fadeIn();
+					$('#message-tx').empty().append($('<label class="text-success">Message Sent !</label>'));
 					formReset();
 					setTimeout(function(){
 						$('.modal-footer .btn').prop('disabled', '').removeClass('disabled');
@@ -90,7 +90,7 @@ $(document).ready(function() { // makes sure the whole site is loaded
 					}, 2000);
 				},
 				error: function(){
-					$('#message-tx').hide().append($('<label class="text-danger">Unauthorized Operation !</label>')).fadeIn();
+					$('#message-tx').empty().append($('<label class="text-danger">Unauthorized Operation !</label>'));
 					setTimeout(function(){
 						$('.modal-footer .btn').prop('disabled', '').removeClass('disabled');
 						$('#message-tx').fadeOut(function(){$(this).empty(); });
