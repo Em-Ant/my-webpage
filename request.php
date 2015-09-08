@@ -10,15 +10,22 @@
 				break;
 			case 'some-keyword' :
 				  //Email information
-				$admin_email = "my-email@example.com";
-				$email = $_POST['email'];
-				$message = $_POST['message'];
+			  $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
+				
+				if(filter_var($email, FILTER_VALIDATE_EMAIL) !== false) {
+				  
+				  $admin_email = "my-email@example.com";
+				  
+				  $message = filter_var($_POST['message'], FILTER_SANITIZE_STRING);
 
-				//send email
-				mail($admin_email, "Contact from Website", $message, "From:" . $email);
-				$a = $_POST;
-				$a["status"] = 'Success';				
-				echo json_encode($a);
+				  //send email
+				  mail($admin_email, "Contact from Website", $message, "From:" . $email);
+				  $a = $_POST;
+				  $a["status"] = 'Success';				
+				  echo json_encode($a);
+				} else {
+				  header("HTTP/1.1 401 Unauthorized");
+				}
 				break;
 			default:
 				header("HTTP/1.1 401 Unauthorized");
