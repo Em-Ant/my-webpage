@@ -7,12 +7,12 @@
 
 @font-face {
     font-family: 'unica_oneregular';
-    src: url('../fonts/unicaone-regular-webfont.eot');
-    src: url('../fonts/unicaone-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/unicaone-regular-webfont.woff2') format('woff2'),
-         url('../fonts/unicaone-regular-webfont.woff') format('woff'),
-         url('../fonts/unicaone-regular-webfont.ttf') format('truetype'),
-         url('../fonts/unicaone-regular-webfont.svg#unica_oneregular') format('svg');
+    src: url('fonts/unicaone-regular-webfont.eot');
+    src: url('fonts/unicaone-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/unicaone-regular-webfont.woff2') format('woff2'),
+         url('fonts/unicaone-regular-webfont.woff') format('woff'),
+         url('fonts/unicaone-regular-webfont.ttf') format('truetype'),
+         url('fonts/unicaone-regular-webfont.svg#unica_oneregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
