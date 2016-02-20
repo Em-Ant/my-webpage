@@ -25,11 +25,14 @@ $(document).ready(function() { // makes sure the whole site is loaded
       setTimeout(function(){		//wait  then show home
         $('#info').animate({opacity: 1}, timeout);
         $('#logo').animate({opacity: 1, top: '0px'}, timeout);
-        $('.links').animate({opacity: 1, left: '0px'}, timeout);
+        $('.links').animate({opacity: 1, left: '0px'}, timeout, 'swing', function(){
+          $('#portfolio').animate({opacity: 1}, timeout);
+        });
         $('footer').animate({opacity: 1}, timeout);
         $('#primary').animate({opacity: 1}, 1.5 * timeout);
         $('footer').animate({opacity: 1}, 1.5 * timeout);
         $('#bg').animate({opacity: 1}, timeout);
+
       }, timeout);
     }
   });
@@ -44,6 +47,13 @@ $(document).ready(function() { // makes sure the whole site is loaded
 		$(this).css('background-position', bgPos[0] + ' ' + bgPos[1]);
 	});
 
+  $('#portfolio a')
+    .hover(function(){
+  		bgPos = $(this).css('background-position').split(' ');
+  		$(this).css('background-position', bgPos[0] + ' -82px');
+  	}, function(){
+  		$(this).css('background-position', bgPos[0] + ' ' + bgPos[1]);
+  	})
 
 	/**
 	* Contacts Form validation setup
@@ -117,5 +127,3 @@ $(document).ready(function() { // makes sure the whole site is loaded
 	$('.modal-footer .btn').prop('disabled', '').removeClass('disabled');
 	formReset();
 });
-
-

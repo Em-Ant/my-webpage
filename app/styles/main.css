@@ -62,7 +62,7 @@ body {
 .err-label{
 	padding : 10px 0 5px 10px;
 }
-    
+
 #bg {
   background : no-repeat center center fixed rgba(20,20,20,0.7);
   background-size: cover;
@@ -86,7 +86,7 @@ body {
 	position: relative;
 	margin:15px auto;
   	width: 90%;
-  	max-width: 400px;	
+  	max-width: 400px;
   	top: -100px; /* Init Point dor Animation*/
 }
 
@@ -116,6 +116,19 @@ footer, .push{
 	display: inline-block;
 }
 
+#portfolio {
+  margin-top: 40px;
+}
+
+#portfolio .caption {
+  font-size: 18px;
+}
+#portfolio a {
+  height: 82px;
+  width: 92px;
+  background-image: url(../images/pfolio.png);
+  display: inline-block;
+}
 .links{
 	margin:10px auto;
 	position:relative;
@@ -204,7 +217,7 @@ footer a{
 footer a:hover{
 	color: white;
 }
-	
+
 
 
 
@@ -213,15 +226,15 @@ footer a:hover{
 	.container {
 	max-width: 730px;
 	}
-	
+
 	#home_cont{
 		margin-top: 100px;
 	}
-	
+
 	#info h1{
 		font-size : 30px;
 	}
-	
+
 	#info p{
 		font-size : 18px;
 	}
