@@ -305,6 +305,7 @@ module.exports = function (grunt) {
           src: [
             '*.{ico,png,txt}',
             'images/{,*/}*.webp',
+            'images/{,*/}*.svg', // removed svgmin due to errors with inkscape files
             '{,*/}*.html',
             'styles/fonts/{,*/}*.*'
           ]
@@ -356,7 +357,7 @@ module.exports = function (grunt) {
         'babel',
         'copy:styles',
         'imagemin',
-        'svgmin'
+        // 'svgmin'
       ]
     }
   });

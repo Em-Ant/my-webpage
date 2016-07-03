@@ -14,7 +14,7 @@
 
 				if(filter_var($email, FILTER_VALIDATE_EMAIL) !== false) {
 
-				  $admin_email = "joshua999x@gmail.com";
+				  $admin_email = "admin@example.com";
 
 				  $message = filter_var($_POST['message'], FILTER_SANITIZE_STRING);
 

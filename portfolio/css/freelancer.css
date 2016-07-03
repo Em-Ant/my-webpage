@@ -91,6 +91,16 @@ header .intro-text .skills {
   font-size: 1.25em;
   font-weight: 300;
 }
+header .intro-text .full-name {
+  font-size: 1.2em;
+  font-weight: 200;
+}
+header .intro-text .full-name::before {
+  content: "<";
+}
+header .intro-text .full-name::after {
+  content: "/>";
+}
 @media (min-width: 768px) {
   header .container {
     padding-top: 200px;
@@ -101,6 +111,9 @@ header .intro-text .skills {
   }
   header .intro-text .skills {
     font-size: 1.75em;
+  }
+  header .intro-text .full-name {
+    font-size: 1.6em;
   }
 }
 @media (min-width: 768px) {
@@ -168,12 +181,16 @@ section.success a.active {
     padding-top: 75px;
   }
 }
+#portfolio img {
+
+}
 #portfolio .portfolio-item {
   margin: 0 0 15px;
   right: 0;
 }
 #portfolio .portfolio-item img {
   box-shadow: 2px 2px 5px rgba(50, 50, 50, 0.5);
+  background: url("../img/pre.gif") no-repeat;
 }
 #portfolio .portfolio-item .portfolio-link {
   display: block;
@@ -397,6 +414,9 @@ footer .footer-below {
   display: none;
 }
 
+.more-stuff {
+  padding-top: 20px;
+}
 @font-face {
     font-family: 'icomoon';
     src:    url('../fonts/icomoon.eot?46rxrs');

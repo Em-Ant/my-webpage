@@ -11,7 +11,7 @@
 'use strict';
 
 $(document).ready(function() { // makes sure the whole site is loaded
-
+  
   $('body').waitForImages({
     waitForAll: true,
     finished: function(){
@@ -100,7 +100,7 @@ $(document).ready(function() { // makes sure the whole site is loaded
 				data: data,
 				success: function(){
 					$('#message-tx').empty().append($('<label class="text-success">Message Sent !</label>'));
-					formReset();
+					formReset(); // eslint-disable-line no-use-before-define
 					setTimeout(function(){
 						$('.modal-footer .btn').prop('disabled', '').removeClass('disabled');
 						$('#message-tx').fadeOut(function(){$(this).empty(); });

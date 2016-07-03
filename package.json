@@ -44,5 +44,9 @@
         "single"
       ]
     }
+  },
+  "dependencies": {
+    "g": "^2.0.1",
+    "grunt": "^0.4.5"
   }
 }

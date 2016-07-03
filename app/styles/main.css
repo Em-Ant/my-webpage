@@ -113,7 +113,13 @@ footer, .push{
 	height: 48px;
 	width: 48px;
 	background-image: url(../images/icons.png);
+  background: url(../images/icons.svg),
+    linear-gradient(transparent, transparent);
 	display: inline-block;
+}
+
+.main-links.nosvg {
+  background-image: url(../images/icons.png);
 }
 
 #portfolio {
@@ -127,8 +133,15 @@ footer, .push{
   height: 82px;
   width: 92px;
   background-image: url(../images/pfolio.png);
+  background: url(../images/pfolio.svg),
+    linear-gradient(transparent, transparent);
   display: inline-block;
 }
+
+#portfolio a.nosvg {
+  background-image: url(../images/pfolio.png);
+}
+
 .links{
 	margin:10px auto;
 	position:relative;
@@ -149,7 +162,7 @@ footer, .push{
 	background-position: -192px 0;
 }
 
-.main-links.deviantart{
+.main-links.cwars{
 	background-position:-240px 0;
 }
 
