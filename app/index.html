@@ -79,7 +79,7 @@
 
 
 	  	<div id="home_cont">
-	  		<img id="logo" class="noshow" xlink:href="./images/logo.svg" src="./images/logo.png" alt="Em-Ant Logo" title="Emanuele's Logo"/>
+        <img id="logo" class="noshow" xlink:href="./images/logo.svg" src="./images/logo.png" alt="Em-Ant Logo" title="Emanuele's Logo"/>
 	  		<div id="info" class="noshow">
 				<h1>Hello, I am Emanuele</h1>
 	  			<p>Have a look at my web footprint:</p>
@@ -99,12 +99,219 @@
 		  		</ul>
 	  		</nav>
         <div id="portfolio" class="noshow">
-          <a href="portfolio/" alt="Web developer Portfolio" title="Web developer Portfolio"></a>
+          <a href="#/portfolio" id="pfolio_link" alt="Web developer Portfolio" title="Web developer Portfolio"></a>
           <p class="caption">Developer Portfolio</p>
         </div>
 	  	</div>
-
-	  	<div class="push"></div>
+      <div id="pfolio-cont" style="display:none">
+        <div id="back">
+          <a href="#" alt="Back to Home"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
+        </div>
+        <h2>Some Selected Projects...</h2>
+        <div class="row pfolio-item">
+          <div class="col-sm-4">
+            <img src="./images/opts.jpg" alt="" class="img-responsive img-centered"/>
+          </div>
+          <div class="col-sm-8 item-info">
+            <h3>Transportation App for <a href="https://options-inc.org/" alt="Options Inc. Big Lake MN" title="Options Inc. Website">Options Inc.</a></h3>
+            <p>
+              Options Inc. is a non-profit organization which helps people with disabilities.
+              We built a transportation management app to help them to organize daily routes
+              for 24 vehicles and about 250 consumers. You can see a detailed description of the project in <a href="https://www.youtube.com/watch?v=V8B4orj0M7Y"
+              title="project description video">this video</a>. A dummy version of the app is hosted
+              <a href="https://transport-app-demo.herokuapp.com/">here</a> (login: admin / admin@test.com).
+            </p>
+            <ul class="item-details">
+                <li>
+                    <strong>
+                      Volunteer project with <a href="http://www.freecodecamp.com" target="_blank">freeCodeCamp</a>
+                    </strong>
+                </li>
+                <li>
+                    <strong>March - May 2016
+                    </strong>
+                </li>
+                <li>
+                    <strong>Express, Mongo, React, Redux, Google Maps API
+                    </strong>
+                </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row pfolio-item">
+          <div class="col-sm-4">
+            <img src="./images/simon.jpg" alt="" class="img-responsive img-centered"/>
+          </div>
+          <div class="col-sm-8 item-info">
+            <h3>Simon Game</h3>
+            <p>
+              An emulation of the classic memory game using jQuery. Graphics are pure CSS. It uses the new AudioContext API,
+              &nbsp;so you need an up-to-date version of a modern browser to run it.
+              &nbsp;See the code and play it live on <a href="http://codepen.io/Em-Ant/full/QbRyqq" target="_blank">Codepen</a>
+            </p>
+            <ul class="item-details">
+                <li>
+                    <strong>
+                      Requirement for the <a href="http://www.freecodecamp.com" target="_blank">freeCodeCamp</a> course
+                    </strong>
+                </li>
+                <li>
+                    <strong>August 2015
+                    </strong>
+                </li>
+                <li>
+                    <strong>HTML, CSS, JQuery, WebAudio API
+                    </strong>
+                </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row pfolio-item">
+          <div class="col-sm-4">
+            <img src="./images/calc.jpg" alt="" class="img-responsive img-centered"/>
+          </div>
+          <div class="col-sm-8 item-info">
+            <h3>Pocket Calculator</h3>
+            <p>
+              A bootstrap and jQuery powered emulation of a vintage pocket calculator.
+              &nbsp;It features the classic operator chaining workflow, and the percent operator in windows calc mode.
+              &nbsp; See the code and try it live on <a href="http://codepen.io/Em-Ant/full/OVabRP" target="_blank">Codepen</a>
+            </p>
+            <ul class="item-details">
+                <li>
+                  <strong>
+                    Requirement for the <a href="http://www.freecodecamp.com" target="_blank">freeCodeCamp</a> course
+                  </strong>
+                </li>
+                <li>
+                    <strong>July 2015
+                    </strong>
+                </li>
+                <li>
+                    <strong>HTML, CSS, JQuery, Bootstrap
+                    </strong>
+                </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row pfolio-item">
+          <div class="col-sm-4">
+            <img src="./images/pomo.jpg" alt="" class="img-responsive img-centered"/>
+          </div>
+          <div class="col-sm-8 item-info">
+            <h3>Pomodoro Clock</h3>
+            <p>
+              A timer to help improving your skills. See how it works <a href="https://en.wikipedia.org/wiki/Pomodoro_Technique" title="Pomodoro technique on Wikipedia" target="_blank">here</a>.
+              &nbsp;Made with simple CSS, and jQuery. The custom vector arts are made in Inkscape.&nbsp;
+              See the code and try it live on <a href="http://codepen.io/Em-Ant/full/vObzWm" target="_blank">Codepen</a>
+             </p>
+            <ul class="item-details">
+                <li>
+                  <strong>
+                    Requirement for the <a href="http://www.freecodecamp.com" target="_blank">freeCodeCamp</a> course
+                  </strong>
+                </li>
+                <li>
+                    <strong>August 2015
+                    </strong>
+                </li>
+                <li>
+                    <strong>HTML, CSS, JQuery, Vector Graphics
+                    </strong>
+                </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row pfolio-item">
+          <div class="col-sm-4">
+            <img src="./images/book.jpg" alt="" class="img-responsive img-centered"/>
+          </div>
+          <div class="col-sm-8 item-info">
+            <h3>Book Trading Club</h3>
+            <p>
+              Fully functional book swapping website, built with the <a href="https://en.wikipedia.org/wiki/MEAN_%28software_bundle%29" target="_blank">MEAN</a> stack.
+              &nbsp;Try it live on <a href="http://tbtc.herokuapp.com/" target="_blank">Heroku</a>. Explore source code on <a href="https://github.com/Em-Ant/book-club">GitHub</a>.
+            </p>
+            <ul class="item-details">
+                <li>
+                  <strong>
+                    Requirement for the <a href="http://www.freecodecamp.com" target="_blank">freeCodeCamp</a> course
+                  </strong>
+                </li>
+                <li>
+                    <strong>October 2015
+                    </strong>
+                </li>
+                <li>
+                    <strong>Node, Express, Mongoose, Angular, Bootstrap
+                    </strong>
+                </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row pfolio-item">
+          <div class="col-sm-4">
+            <img src="./images/nzone.jpg" alt="" class="img-responsive img-centered"/>
+          </div>
+          <div class="col-sm-8 item-info">
+            <h3>Nightzone</h3>
+            <p>
+              Nightlife coordination app, built with React, MongoDB, Node and Express.
+              &nbsp;Features Twitter login, and a custom responsive design. Powered by the <a href="http://www.yelp.com">Yelp</a> search API.
+              &nbsp;Try it live on <a href="http://nightzone.herokuapp.com/" target="_blank">Heroku</a>. Explore source code on <a href="https://github.com/Em-Ant/fcc-nightzone">GitHub</a>.</p>
+            </p>
+            <ul class="item-details">
+                <li>
+                  <strong>
+                    Requirement for the <a href="http://www.freecodecamp.com" target="_blank">freeCodeCamp</a> course
+                  </strong>
+                </li>
+                <li>
+                    <strong>February 2016
+                    </strong>
+                </li>
+                <li>
+                    <strong>Express, Mongo, React, Twitter OAuth, Yelp API
+                    </strong>
+                </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row pfolio-item">
+          <div class="col-sm-4">
+            <img src="./images/pict.jpg" alt="" class="img-responsive img-centered"/>
+          </div>
+          <div class="col-sm-8 item-info">
+            <h3>Picterest</h3>
+            <p>
+              Pinterest-like web app, built with Bootstrap, React, MongoDB, Node and Express. You can submit links to you favorite images.
+              &nbsp;Also features a link liking system. The eye-catching animated grid layout is powered by <a href="http://masonry.desandro.com/">Masonry</a>.
+              &nbsp;Try it live on <a href="http://pic-terest.herokuapp.com/" target="_blank">Heroku</a>. Explore source code on <a href="https://github.com/Em-Ant/pic-terest">GitHub</a>.</p>
+            </p>
+            <ul class="item-details">
+                <li>
+                  <strong>
+                    Requirement for the <a href="http://www.freecodecamp.com" target="_blank">freeCodeCamp</a> course
+                  </strong>
+                </li>
+                <li>
+                    <strong>February 2016
+                    </strong>
+                </li>
+                <li>
+                    <strong>Express, Mongo, React, Twitter OAuth, Masonry
+                    </strong>
+                </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 more-stuff">
+            <p class="text-center">More stuff on <a href="http://codepen.io/Em-Ant/" target="_blank" title="Em Ant on Codepen">Codepen</a> and <a href="http://www.freecodecamp.com/Em-Ant" title="Em Ant on freeCodeCamp">freeCodeCamp</a>.</p>
+          </div>
+        </div>
+      </div>
+	     <div class="push"></div>
     </div>
 	<footer class="noshow">
 		<h3>Design &amp; Development by EmAnt, using <a href="http://en.wikipedia.org/wiki/Free_and_open-source_software" alt="Free Open Source Software" title="Free Open Source Software" >FOSS</a> - Background Image  from <a href="https://pixabay.com/">PIXABAY</a> - Copyright &copy;2015 by EmAnt</h3>

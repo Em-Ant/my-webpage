@@ -11,7 +11,7 @@
 'use strict';
 
 $(document).ready(function() { // makes sure the whole site is loaded
-  
+
   $('body').waitForImages({
     waitForAll: true,
     finished: function(){
@@ -54,6 +54,20 @@ $(document).ready(function() { // makes sure the whole site is loaded
   	}, function(){
   		$(this).css('background-position', bgPos[0] + ' ' + bgPos[1]);
   	})
+
+  $('#pfolio_link').click(function(e) {
+    e.preventDefault();
+    $('#home_cont').fadeOut(800, function(){
+      $('#pfolio-cont').fadeIn(600);
+    });
+  })
+
+  $('#back').click(function(e) {
+    e.preventDefault();
+    $('#pfolio-cont').fadeOut(800, function(){
+      $('#home_cont').fadeIn(600);
+    });
+  })
 
 	/**
 	* Contacts Form validation setup
