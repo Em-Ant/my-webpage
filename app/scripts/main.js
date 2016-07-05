@@ -38,13 +38,12 @@ $(document).ready(function() { // makes sure the whole site is loaded
   });
 
   var bgPos;
-
   $('.main-links')
 	.hover(function(){
 		bgPos = $(this).css('background-position').split(' ');
 		$(this).css('background-position', bgPos[0] + ' -48px');
 	}, function(){
-		$(this).css('background-position', bgPos[0] + ' ' + bgPos[1]);
+		$(this).css('background-position', bgPos[0] + ' 0');
 	});
 
   $('#portfolio a')
