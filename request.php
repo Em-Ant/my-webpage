@@ -8,7 +8,7 @@
 				$a["status"] = 'Test Success';
 				echo json_encode($a);
 				break;
-			case 'secret-action' :
+			case 'send-mail' :
 				  //Email information
 			  $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
 

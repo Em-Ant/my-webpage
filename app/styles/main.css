@@ -302,3 +302,28 @@ footer a:hover{
 		margin-top: 100px;
 	}
 }
+
+@media screen and (max-height: 640px) {
+  .ul-inline {
+    display: inline-block;
+    margin-left: 1px;
+  }
+  .hide-sm {
+    display: none;
+  }
+  #portfolio {
+    margin-top: 0;
+  }
+  .sticky-wrapper {
+    margin: 0 auto -40px;
+  }
+ .push{
+  	height:10px;
+  }
+  footer {
+    height: 30px;
+  }
+  footer h3 {
+    top: 0;
+  }
+}

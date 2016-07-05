@@ -102,7 +102,7 @@ $(document).ready(function() { // makes sure the whole site is loaded
 			$('.modal-footer .btn').prop('disabled', 'disabled').addClass('disabled');
 			$('#message-tx').hide().append($('<label class="text-primary">Waiting for Response...</label>')).fadeIn();
 			var data = {
-				'action': 'secret-action'
+				'action': 'send-mail'
 			};
 			data = $(form).serialize() + '&' + $.param(data);
 			$.ajax({
