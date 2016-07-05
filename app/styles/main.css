@@ -321,13 +321,13 @@ footer a:hover{
     margin-top: 0;
   }
   .sticky-wrapper {
-    margin: 0 auto -30px;
+    margin: 0 auto -40px;
   }
  .push{
-  	height:30px;
+  	height:40px;
   }
   footer {
-    height: 30px;
+    height: 40px;
   }
   footer h3 {
     top: 0;
