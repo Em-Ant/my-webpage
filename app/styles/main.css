@@ -19,8 +19,8 @@
 
 body {
 	overflow: hidden;
+  background: url('../images/bg-phone.jpg') no-repeat center center fixed;
 	font-family:'unica_oneregular', sans;
-	background: url('../images/bg.jpg') no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -138,6 +138,10 @@ body {
   padding: 10px;
   height: 100%;
   z-index: 1;
+}
+
+.w-90 {
+  width: 90%;
 }
 
 #logo{
@@ -287,7 +291,9 @@ footer a:hover{
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-
+  body {
+    background: url('../images/bg.jpg') no-repeat center center fixed;
+  }
 	#info h1{
 		font-size : 30px;
 	}
@@ -315,10 +321,10 @@ footer a:hover{
     margin-top: 0;
   }
   .sticky-wrapper {
-    margin: 0 auto -40px;
+    margin: 0 auto -30px;
   }
  .push{
-  	height:10px;
+  	height:30px;
   }
   footer {
     height: 30px;
