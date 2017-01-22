@@ -38,7 +38,9 @@ $(document).ready(function() { // makes sure the whole site is loaded
     finished: function(){
 
       window.onhashchange = checkHash;
-      if(window.location.hash === '#/portfolio') loadPfolio();
+      if(window.location.hash === '#/portfolio') {
+        loadPfolio();
+      }
 
       var timeout = 1500;
 
@@ -74,8 +76,8 @@ $(document).ready(function() { // makes sure the whole site is loaded
     .hover(function(){
       $(this).css('background-position', '0 -82px');
     }, function(){
-      $(this).css('background-position', '0 0')
-    })
+      $(this).css('background-position', '0 0');
+    });
 
   //$('#pfolio_link').click(loadPfolio);
 
