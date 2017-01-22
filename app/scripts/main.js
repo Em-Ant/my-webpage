@@ -48,11 +48,11 @@ $(document).ready(function() { // makes sure the whole site is loaded
 
   $('#portfolio a')
     .hover(function(){
-  		$(this).css('background-position', '0 -82px');
-  	}, function(){
-  		$(this).css('background-position', '0 0');
-  	})
-
+      $(this).css('background-position', '0 -82px');
+    }, function(){
+      $(this).css('background-position', '0 0')
+    })
+    
   $('#pfolio_link').click(function(e) {
     e.preventDefault();
     $('#home_cont').fadeOut(800, function(){

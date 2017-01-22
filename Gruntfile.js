@@ -356,7 +356,7 @@ module.exports = function (grunt) {
       dist: [
         'babel',
         'copy:styles',
-        'imagemin',
+        'imagemin'//,
         // 'svgmin'
       ]
     }
