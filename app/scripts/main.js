@@ -12,9 +12,33 @@
 
 $(document).ready(function() { // makes sure the whole site is loaded
 
+  function loadPfolio() {
+    $('#home_cont').fadeOut(800, function(){
+      $('#pfolio-cont').scrollTop(0).fadeIn(600);
+    });
+  }
+
+  function backHome() {
+    $('#pfolio-cont').fadeOut(800, function(){
+      $('#home_cont').scrollTop(0).fadeIn(600);
+    });
+  }
+
+  function checkHash() {
+    if(window.location.hash === '#/portfolio') {
+      loadPfolio();
+    } else {
+      window.location.hash = '';
+      backHome();
+    }
+  }
+
   $('body').waitForImages({
     waitForAll: true,
     finished: function(){
+
+      window.onhashchange = checkHash;
+      if(window.location.hash === '#/portfolio') loadPfolio();
 
       var timeout = 1500;
 
@@ -52,20 +76,10 @@ $(document).ready(function() { // makes sure the whole site is loaded
     }, function(){
       $(this).css('background-position', '0 0')
     })
-    
-  $('#pfolio_link').click(function(e) {
-    e.preventDefault();
-    $('#home_cont').fadeOut(800, function(){
-      $('#pfolio-cont').scrollTop(0).fadeIn(600);
-    });
-  })
 
-  $('#back').click(function(e) {
-    e.preventDefault();
-    $('#pfolio-cont').fadeOut(800, function(){
-      $('#home_cont').scrollTop(0).fadeIn(600);
-    });
-  })
+  //$('#pfolio_link').click(loadPfolio);
+
+  //$('#back').click(backHome)
 
 	/**
 	* Contacts Form validation setup
