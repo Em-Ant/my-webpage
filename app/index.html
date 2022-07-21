@@ -1,408 +1,447 @@
 <!doctype html>
 <html class="no-js" lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta name="description"
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
     content="Welcome to Emanuele Antonelli's landing page. I collect here all the links to my web development projects and coding activities on the web." />
 
-    <title>Emanuele's Webpage</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Emanuele's Webpage</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-    <!-- build:css(.) styles/vendor.css -->
-    <!-- bower:css -->
-    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" />
-    <!-- endbower -->
-    <!-- endbuild -->
-    <!-- build:css(.tmp) styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
+  <!-- build:css(.) styles/vendor.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" />
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css(.tmp) styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
 
-  </head>
-  <body>
-    <!--[if lt IE 10]>
+</head>
+
+<body>
+  <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    	<!-- Preloader -->
-	<div id="preloader">
-		<div id="status">&nbsp;
-		</div>
-	</div>
-	<div id="bg"></div>
-    <div class="container sticky-wrapper">
+  <!-- Preloader -->
+  <div id="preloader">
+    <div id="status">&nbsp;
+    </div>
+  </div>
+  <div id="bg"></div>
+  <div class="container sticky-wrapper">
 
-	  	<!-- Modal Contacts Form-->
-		<div class="modal fade" id="contacts-modal" tabindex="-1" role="dialog">
-		  <div class="modal-dialog" role="document">
-			<div class="modal-content">
-			  <div class="modal-header">
-				<button type="button" class="close reset" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				<h4 class="modal-title" id="exampleModalLabel">New message</h4>
-			  </div>
-			  <div class="modal-body">
-				<form id="contacts-form" novalidate="novalidate">
+    <!-- Modal Contacts Form-->
+    <div class="modal fade" id="contacts-modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close reset" data-dismiss="modal" aria-label="Close"><span
+                aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="exampleModalLabel">New message</h4>
+          </div>
+          <div class="modal-body">
+            <form id="contacts-form" novalidate="novalidate">
 
-				  <div class="form-group" id="email-group">
-					<label for="email" class="control-label">From:</label>
-					<div class="input-group">
-						<span class="input-group-addon arial">@</span>
-						<input type="text" class="form-control arial" id="email-input" placeholder="Your email here" name="email">
-					</div>
-					<div id="email-err" class="err-label"></div>
-				  </div>
+              <div class="form-group" id="email-group">
+                <label for="email" class="control-label">From:</label>
+                <div class="input-group">
+                  <span class="input-group-addon arial">@</span>
+                  <input type="text" class="form-control arial" id="email-input" placeholder="Your email here"
+                    name="email">
+                </div>
+                <div id="email-err" class="err-label"></div>
+              </div>
 
-				  <div class="form-group" id="message-group">
-					<label for="message" class="control-label">Message:</label>
-						<textarea class="form-control arial" id="message-text" placeholder="Your message here..." name="message"></textarea>
-				  	<div id="message-err" class="err-label"></div>
-				  </div>
+              <div class="form-group" id="message-group">
+                <label for="message" class="control-label">Message:</label>
+                <textarea class="form-control arial" id="message-text" placeholder="Your message here..."
+                  name="message"></textarea>
+                <div id="message-err" class="err-label"></div>
+              </div>
 
-				<div class="modal-footer">
-					<div id="message-tx" class="err-label"></div>
-					<a type="button" href="#close" class="btn btn-default reset" data-dismiss="modal">Close</a>
-					<input type="submit" class="btn btn-primary" value="Send Message" >
-			  	</div>
+              <div class="modal-footer">
+                <div id="message-tx" class="err-label"></div>
+                <a type="button" href="#close" class="btn btn-default reset" data-dismiss="modal">Close</a>
+                <input type="submit" class="btn btn-primary" value="Send Message">
+              </div>
 
-				</form>
-			  </div>
+            </form>
+          </div>
 
-			</div>
-		  </div>
-		</div>
-
-
-	  	<div id="home_cont">
-        <img id="logo" class="noshow" xlink:href="./images/logo.svg" src="./images/logo.png" alt="Em-Ant Logo" title="Emanuele's Logo"/>
-	  		<div id="info" class="noshow">
-				<h1 class="hide-sm">Hello, I am Emanuele</h1>
-	  			<p class="hide-sm">Have a look at my web footprint:</p>
-	  		</div>
-	  		<nav class="links noshow">
-		  		<ul class="list-inline">
-		  			<li><a class="main-links fcc"  href="https://www.freecodecamp.com/em-ant" alt="Emanuele on Free Code Camp" title="Emanuele on Free Code Camp" target="_blank"></a></li>
-		  			<li><a class="main-links hr"  href="https://www.hackerrank.com/em_ant" alt="Emanuele on HackeRank" title="Emanuele on HackerRank" target="_blank"></a></li>
-		  			<li><a class="main-links cwars" href="https://www.codewars.com/users/Em-Ant" alt="Emanuele on Codewars" title="Emanuele on Codewars" target="_blank"></a></li>
-		  		</ul>
-		  		<ul class="list-inline ul-inline">
-            <li><a class="main-links git"  href="https://github.com/Em-Ant" alt="Emanuele on GitHub" title="Emanuele on GitHub" target="_blank"></a></li>
-            <li><a class="main-links cdp"  href="https://codepen.io/Em-Ant/" alt="Emanuele on CodePen" title="Emanuele on Codepen" target="_blank"></a></li>
-		  		</ul>
-		  		<ul class="list-inline ul-inline">
-		  			<li><a class="main-links mail" href="#contacts" data-toggle="modal"  title="Click here to contact Me!" data-target="#contacts-modal"></a></li>
-		  		</ul>
-	  		</nav>
-        <div id="portfolio" class="noshow">
-          <a href="#/portfolio" id="pfolio_link" alt="Web developer Portfolio" title="Web developer Portfolio"></a>
-          <p class="caption">Developer Portfolio</p>
-        </div>
-	  	</div>
-      <div id="pfolio-cont" style="display:none">
-        <div id="back">
-          <a href="#" alt="Back to Home" title="Back to Home"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
-        </div>
-        <h2 class="w-90">Some Selected Projects...</h2>
-        <div class="row pfolio-item">
-          <div class="col-sm-4">
-            <a href="https://www.youtube.com/watch?v=V8B4orj0M7Y" target="blank_" alt="Options, Inc. transport app description video" target="_blank">
-              <img src="./images/opts.jpg" alt="Options, Inc. transport app description video" class="img-responsive img-centered"/>
-            </a>
-          </div>
-          <div class="col-sm-8 item-info">
-            <h3>Transportation App for <a href="https://options-inc.org/" alt="Options, Inc. Big Lake MN" title="Option, Inc. Website" target="_blank">Options, Inc.</a></h3>
-            <p>
-              Options, Inc. is a non-profit organization which helps people with disabilities.
-              We built a transportation management app to help them to organize daily routes
-              for 24 vehicles and about 250 consumers. You can see a detailed description of the project in
-              <a href="https://www.youtube.com/watch?v=V8B4orj0M7Y" title="Options Inc. project description video" target="_blank">this video</a>.
-              A dummy version of the app is hosted <a href="https://transport-app-demo.herokuapp.com/" target="_blank">here</a>
-              ( login: <span class="code">admin/admin@test.com</span> ). Check the
-              <a href="https://github.com/Em-Ant/fcc-options-app" target="_blank">source code</a>.
-            </p>
-            <ul class="item-details">
-                <li>
-                    <strong>
-                      Volunteer project with <a href="http://www.freecodecamp.com" target="_blank">freeCodeCamp</a>
-                    </strong>
-                </li>
-                <li>
-                    <strong>March - May 2016
-                    </strong>
-                </li>
-                <li>
-                    <strong>Express, Mongo, React, Redux, Google Maps API
-                    </strong>
-                </li>
-            </ul>
-          </div>
-        </div>
-        <div class="row pfolio-item">
-          <div class=col-sm-4>
-            <a href=http://emant.altervista.org/micro/ target=_blank alt="REST API demo - php5">
-              <img src="./images/mserv.jpg" alt="microservice API home" class="img-responsive img-centered">
-            </a>
-          </div>
-          <div class="col-sm-8 item-info">
-            <h3>REST API microservice demo</h3>
-            <p>A working RESTful API microservice demo, providing interesting data and informations.
-              I Implemented two versions of this project. You can find the php5+SQLite3 version
-              <a href=http://emant.altervista.org/micro/ target=_blank alt="php5 rest api">here</a>.
-              The source code is hosted on my <a href=https://github.com/Em-Ant/API_projects_php5 target=_blank alt="php5 REST API source">github</a>
-              profile. The Express+MongoDB version is hosted on <a href=https://gomix.com/#!/project/micro-api target=_blank alt="node.js REST API link">Gomix</a>,
-              where you can also see the source code
-            </p>
-            <ul class=item-details>
-              <li>
-                <strong>
-                  Requirement for the <a href=http://www.freecodecamp.com target=_blank>freeCodeCamp</a> course
-                </strong>
-              </li>
-              <li>
-                <strong>February 2016 </strong>
-              </li>
-              <li>
-                <strong>php5+apache+SQLite3 | JS+Express+MongoDB </strong>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="row pfolio-item">
-          <div class="col-sm-4">
-            <a href="http://codepen.io/Em-Ant/full/QbRyqq" target="_blank" alt="Simon Game on Codepen">
-              <img src="./images/simon.jpg" alt="Simon Game on Codepen" class="img-responsive img-centered"/>
-            </a>
-          </div>
-          <div class="col-sm-8 item-info">
-            <h3>Simon Game</h3>
-            <p>
-              An emulation of the classic memory game using jQuery. Graphics are pure CSS. It uses the new AudioContext API,
-               so you need an up-to-date version of a modern browser to run it.
-               See the code and play it live on <a href="http://codepen.io/Em-Ant/full/QbRyqq" target="_blank">Codepen</a>
-            </p>
-            <ul class="item-details">
-                <li>
-                    <strong>
-                      Requirement for the <a href="http://www.freecodecamp.com" target="_blank">freeCodeCamp</a> course
-                    </strong>
-                </li>
-                <li>
-                    <strong>August 2015
-                    </strong>
-                </li>
-                <li>
-                    <strong>HTML, CSS, JQuery, WebAudio API
-                    </strong>
-                </li>
-            </ul>
-          </div>
-        </div>
-        <div class="row pfolio-item">
-          <div class="col-sm-4">
-            <a href="http://codepen.io/Em-Ant/full/OVabRP" target="_blank" alt="Pocket calculator project on codepen">
-              <img src="./images/calc.jpg" alt="Pocket calculator project on codepen" class="img-responsive img-centered"/>
-            </a>
-          </div>
-          <div class="col-sm-8 item-info">
-            <h3>Pocket Calculator</h3>
-            <p>
-              A bootstrap and jQuery powered emulation of a vintage pocket calculator.
-               It features the classic operator chaining workflow, and the percent operator in windows calc mode.
-                See the code and try it live on <a href="http://codepen.io/Em-Ant/full/OVabRP" target="_blank">Codepen</a>
-            </p>
-            <ul class="item-details">
-                <li>
-                  <strong>
-                    Requirement for the <a href="http://www.freecodecamp.com" target="_blank">freeCodeCamp</a> course
-                  </strong>
-                </li>
-                <li>
-                    <strong>July 2015
-                    </strong>
-                </li>
-                <li>
-                    <strong>HTML, CSS, JQuery, Bootstrap
-                    </strong>
-                </li>
-            </ul>
-          </div>
-        </div>
-        <div class="row pfolio-item">
-          <div class="col-sm-4">
-            <a href="http://codepen.io/Em-Ant/full/vObzWm" target="_blank" alt="Pomodoro Clock project on codepen">
-              <img src="./images/pomo.jpg" alt="Pomodoro Clock project on codepen" class="img-responsive img-centered"/>
-            </a>
-          </div>
-          <div class="col-sm-8 item-info">
-            <h3>Pomodoro Clock</h3>
-            <p>
-              A timer to help improving your skills. See how it works <a href="https://en.wikipedia.org/wiki/Pomodoro_Technique" title="Pomodoro technique on Wikipedia" target="_blank">here</a>.
-               Made with simple CSS, and jQuery. The custom vector arts are made in Inkscape.
-              See the code and try it live on <a href="http://codepen.io/Em-Ant/full/vObzWm" target="_blank">Codepen</a>
-             </p>
-            <ul class="item-details">
-                <li>
-                  <strong>
-                    Requirement for the <a href="http://www.freecodecamp.com" target="_blank">freeCodeCamp</a> course
-                  </strong>
-                </li>
-                <li>
-                    <strong>August 2015
-                    </strong>
-                </li>
-                <li>
-                    <strong>HTML, CSS, JQuery, Vector Graphics
-                    </strong>
-                </li>
-            </ul>
-          </div>
-        </div>
-        <div class="row pfolio-item">
-          <div class="col-sm-4">
-            <a href="http://tbtc.herokuapp.com/" target="_blank" alt="Book Club project on Heroku">
-              <img src="./images/book.jpg" alt="Book Club project on Heroku" class="img-responsive img-centered"/>
-            </a>
-          </div>
-          <div class="col-sm-8 item-info">
-            <h3>Book Trading Club</h3>
-            <p>
-              Fully functional book swapping website, built with the <a href="https://en.wikipedia.org/wiki/MEAN_%28software_bundle%29" target="_blank">MEAN</a> stack.
-               Try it live on <a href="http://tbtc.herokuapp.com/" target="_blank">Heroku</a>. Explore source code on <a href="https://github.com/Em-Ant/book-club">GitHub</a>.
-            </p>
-            <ul class="item-details">
-                <li>
-                  <strong>
-                    Requirement for the <a href="http://www.freecodecamp.com" target="_blank">freeCodeCamp</a> course
-                  </strong>
-                </li>
-                <li>
-                    <strong>October 2015
-                    </strong>
-                </li>
-                <li>
-                    <strong>Node, Express, Mongoose, Angular, Bootstrap
-                    </strong>
-                </li>
-            </ul>
-          </div>
-        </div>
-        <div class="row pfolio-item">
-          <div class="col-sm-4">
-            <a href="http://nightzone.herokuapp.com/" target="_blank" alt="Nightlife coordination project on Heroku">
-              <img src="./images/nzone.jpg" alt="Nightlife coordination project on Heroku" class="img-responsive img-centered"/>
-            </a>
-          </div>
-          <div class="col-sm-8 item-info">
-            <h3>Nightzone</h3>
-            <p>
-              Nightlife coordination app, built with React, MongoDB, Node and Express.
-               Features Twitter login, and a custom responsive design. Powered by the <a href="http://www.yelp.com">Yelp</a> search API.
-               Try it live on <a href="http://nightzone.herokuapp.com/" target="_blank">Heroku</a>. Explore source code on <a href="https://github.com/Em-Ant/fcc-nightzone">GitHub</a>.</p>
-            </p>
-            <ul class="item-details">
-                <li>
-                  <strong>
-                    Requirement for the <a href="http://www.freecodecamp.com" target="_blank">freeCodeCamp</a> course
-                  </strong>
-                </li>
-                <li>
-                    <strong>February 2016
-                    </strong>
-                </li>
-                <li>
-                    <strong>Express, Mongo, React, Twitter OAuth, Yelp API
-                    </strong>
-                </li>
-            </ul>
-          </div>
-        </div>
-        <div class="row pfolio-item">
-          <div class="col-sm-4">
-            <a href="http://pic-terest.herokuapp.com/" target="_blank" alt="Pinterest clone project on Heroku">
-              <img src="./images/pict.jpg" alt="Pinterest clone project on Heroku" class="img-responsive img-centered"/>
-            </a>
-          </div>
-          <div class="col-sm-8 item-info">
-            <h3>Picterest</h3>
-            <p>
-              Pinterest-like web app, built with Bootstrap, React, MongoDB, Node and Express. You can submit links to you favorite images.
-               Also features a link liking system. The eye-catching animated grid layout is powered by <a href="http://masonry.desandro.com/">Masonry</a>.
-               Try it live on <a href="http://pic-terest.herokuapp.com/" target="_blank">Heroku</a>. Explore source code on <a href="https://github.com/Em-Ant/pic-terest">GitHub</a>.</p>
-            </p>
-            <ul class="item-details">
-                <li>
-                  <strong>
-                    Requirement for the <a href="http://www.freecodecamp.com" target="_blank">freeCodeCamp</a> course
-                  </strong>
-                </li>
-                <li>
-                    <strong>February 2016
-                    </strong>
-                </li>
-                <li>
-                    <strong>Express, Mongo, React, Twitter OAuth, Masonry
-                    </strong>
-                </li>
-            </ul>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-12 more-stuff">
-            <p class="text-center">More stuff on <a href="http://codepen.io/Em-Ant/" target="_blank" title="Em Ant on Codepen">Codepen</a> and <a href="http://www.freecodecamp.com/Em-Ant" title="Em Ant on freeCodeCamp">freeCodeCamp</a>.</p>
-          </div>
         </div>
       </div>
-	     <div class="push"></div>
     </div>
-	<footer class="noshow">
-		<h3>Design &amp; Development by EmAnt, using <a href="http://en.wikipedia.org/wiki/Free_and_open-source_software" alt="Free Open Source Software" title="Free Open Source Software" >FOSS</a> - Background Image  from <a href="https://pixabay.com/">PIXABAY</a> - Copyright &copy;2015 by EmAnt</h3>
-	</footer>
+
+
+    <div id="home_cont">
+      <img id="logo" class="noshow" xlink:href="./images/logo.svg" src="./images/logo.png" alt="Em-Ant Logo"
+        title="Emanuele's Logo" />
+      <div id="info" class="noshow">
+        <h1 class="hide-sm">Hello, I am Emanuele</h1>
+        <p class="hide-sm">Have a look at my web footprint:</p>
+      </div>
+      <nav class="links noshow">
+        <ul class="list-inline">
+          <li><a class="main-links fcc" href="https://www.freecodecamp.com/em-ant" alt="Emanuele on Free Code Camp"
+              title="Emanuele on Free Code Camp" target="_blank"></a></li>
+          <li><a class="main-links hr" href="https://www.hackerrank.com/em_ant" alt="Emanuele on HackeRank"
+              title="Emanuele on HackerRank" target="_blank"></a></li>
+          <li><a class="main-links cwars" href="https://www.codewars.com/users/Em-Ant" alt="Emanuele on Codewars"
+              title="Emanuele on Codewars" target="_blank"></a></li>
+        </ul>
+        <ul class="list-inline ul-inline">
+          <li><a class="main-links git" href="https://github.com/Em-Ant" alt="Emanuele on GitHub"
+              title="Emanuele on GitHub" target="_blank"></a></li>
+          <li><a class="main-links cdp" href="https://codepen.io/Em-Ant/" alt="Emanuele on CodePen"
+              title="Emanuele on Codepen" target="_blank"></a></li>
+        </ul>
+        <ul class="list-inline ul-inline">
+          <li><a class="main-links mail" href="#contacts" data-toggle="modal" title="Click here to contact Me!"
+              data-target="#contacts-modal"></a></li>
+        </ul>
+      </nav>
+      <div id="portfolio" class="noshow">
+        <a href="#/portfolio" id="pfolio_link" alt="Web developer Portfolio" title="Web developer Portfolio"></a>
+        <p class="caption">Developer Portfolio</p>
+      </div>
+    </div>
+    <div id="pfolio-cont" style="display:none">
+      <div id="back">
+        <a href="#" alt="Back to Home" title="Back to Home"><span class="glyphicon glyphicon-chevron-left"
+            aria-hidden="true"></span></a>
+      </div>
+      <h2 class="w-90">Some Selected Projects...</h2>
+      <div class="row pfolio-item">
+        <div class="col-sm-4">
+          <a href="https://www.youtube.com/watch?v=V8B4orj0M7Y" target="blank_"
+            alt="Options, Inc. transport app description video" target="_blank">
+            <img src="./images/opts.jpg" alt="Options, Inc. transport app description video"
+              class="img-responsive img-centered" />
+          </a>
+        </div>
+        <div class="col-sm-8 item-info">
+          <h3>Transportation App for <a href="https://options-inc.org/" alt="Options, Inc. Big Lake MN"
+              title="Option, Inc. Website" target="_blank">Options, Inc.</a></h3>
+          <p>
+            Options, Inc. is a non-profit organization which helps people with disabilities.
+            We built a transportation management app to help them to organize daily routes
+            for 24 vehicles and about 250 consumers. You can see a detailed description of the project in
+            <a href="https://www.youtube.com/watch?v=V8B4orj0M7Y" title="Options Inc. project description video"
+              target="_blank">this video</a>.
+            A dummy version of the app is hosted <a href="https://transport-app-demo.herokuapp.com/"
+              target="_blank">here</a>
+            ( login: <span class="code">admin/admin@test.com</span> ). Check the
+            <a href="https://github.com/Em-Ant/fcc-options-app" target="_blank">source code</a>.
+          </p>
+          <ul class="item-details">
+            <li>
+              <strong>
+                Volunteer project with <a href="http://www.freecodecamp.com" target="_blank">freeCodeCamp</a>
+              </strong>
+            </li>
+            <li>
+              <strong>March - May 2016
+              </strong>
+            </li>
+            <li>
+              <strong>Express, Mongo, React, Redux, Google Maps API
+              </strong>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row pfolio-item">
+        <div class=col-sm-4>
+          <a href=http://emant.altervista.org/micro/ target=_blank alt="REST API demo - php5">
+            <img src="./images/mserv.jpg" alt="microservice API home" class="img-responsive img-centered">
+          </a>
+        </div>
+        <div class="col-sm-8 item-info">
+          <h3>REST API microservice demo</h3>
+          <p>A working RESTful API microservice demo, providing interesting data and informations.
+            I Implemented two versions of this project. You can find the php5+SQLite3 version
+            <a href=http://emant.altervista.org/micro/ target=_blank alt="php5 rest api">here</a>.
+            The source code is hosted on my <a href=https://github.com/Em-Ant/API_projects_php5 target=_blank
+              alt="php5 REST API source">github</a>
+            profile. The Express+MongoDB version is hosted on <a href=https://gomix.com/#!/project/micro-api
+              target=_blank alt="node.js REST API link">Gomix</a>,
+            where you can also see the source code
+          </p>
+          <ul class=item-details>
+            <li>
+              <strong>
+                Requirement for the <a href=http://www.freecodecamp.com target=_blank>freeCodeCamp</a> course
+              </strong>
+            </li>
+            <li>
+              <strong>February 2016 </strong>
+            </li>
+            <li>
+              <strong>php5+apache+SQLite3 | JS+Express+MongoDB </strong>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row pfolio-item">
+        <div class="col-sm-4">
+          <a href="http://codepen.io/Em-Ant/full/QbRyqq" target="_blank" alt="Simon Game on Codepen">
+            <img src="./images/simon.jpg" alt="Simon Game on Codepen" class="img-responsive img-centered" />
+          </a>
+        </div>
+        <div class="col-sm-8 item-info">
+          <h3>Simon Game</h3>
+          <p>
+            An emulation of the classic memory game using jQuery. Graphics are pure CSS. It uses the new AudioContext
+            API,
+            so you need an up-to-date version of a modern browser to run it.
+            See the code and play it live on <a href="http://codepen.io/Em-Ant/full/QbRyqq" target="_blank">Codepen</a>
+          </p>
+          <ul class="item-details">
+            <li>
+              <strong>
+                Requirement for the <a href="http://www.freecodecamp.com" target="_blank">freeCodeCamp</a> course
+              </strong>
+            </li>
+            <li>
+              <strong>August 2015
+              </strong>
+            </li>
+            <li>
+              <strong>HTML, CSS, JQuery, WebAudio API
+              </strong>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row pfolio-item">
+        <div class="col-sm-4">
+          <a href="http://codepen.io/Em-Ant/full/OVabRP" target="_blank" alt="Pocket calculator project on codepen">
+            <img src="./images/calc.jpg" alt="Pocket calculator project on codepen"
+              class="img-responsive img-centered" />
+          </a>
+        </div>
+        <div class="col-sm-8 item-info">
+          <h3>Pocket Calculator</h3>
+          <p>
+            A bootstrap and jQuery powered emulation of a vintage pocket calculator.
+            It features the classic operator chaining workflow, and the percent operator in windows calc mode.
+            See the code and try it live on <a href="http://codepen.io/Em-Ant/full/OVabRP" target="_blank">Codepen</a>
+          </p>
+          <ul class="item-details">
+            <li>
+              <strong>
+                Requirement for the <a href="http://www.freecodecamp.com" target="_blank">freeCodeCamp</a> course
+              </strong>
+            </li>
+            <li>
+              <strong>July 2015
+              </strong>
+            </li>
+            <li>
+              <strong>HTML, CSS, JQuery, Bootstrap
+              </strong>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row pfolio-item">
+        <div class="col-sm-4">
+          <a href="http://codepen.io/Em-Ant/full/vObzWm" target="_blank" alt="Pomodoro Clock project on codepen">
+            <img src="./images/pomo.jpg" alt="Pomodoro Clock project on codepen" class="img-responsive img-centered" />
+          </a>
+        </div>
+        <div class="col-sm-8 item-info">
+          <h3>Pomodoro Clock</h3>
+          <p>
+            A timer to help improving your skills. See how it works <a
+              href="https://en.wikipedia.org/wiki/Pomodoro_Technique" title="Pomodoro technique on Wikipedia"
+              target="_blank">here</a>.
+            Made with simple CSS, and jQuery. The custom vector arts are made in Inkscape.
+            See the code and try it live on <a href="http://codepen.io/Em-Ant/full/vObzWm" target="_blank">Codepen</a>
+          </p>
+          <ul class="item-details">
+            <li>
+              <strong>
+                Requirement for the <a href="http://www.freecodecamp.com" target="_blank">freeCodeCamp</a> course
+              </strong>
+            </li>
+            <li>
+              <strong>August 2015
+              </strong>
+            </li>
+            <li>
+              <strong>HTML, CSS, JQuery, Vector Graphics
+              </strong>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row pfolio-item">
+        <div class="col-sm-4">
+          <a href="http://tbtc.herokuapp.com/" target="_blank" alt="Book Club project on Heroku">
+            <img src="./images/book.jpg" alt="Book Club project on Heroku" class="img-responsive img-centered" />
+          </a>
+        </div>
+        <div class="col-sm-8 item-info">
+          <h3>Book Trading Club</h3>
+          <p>
+            Fully functional book swapping website, built with the <a
+              href="https://en.wikipedia.org/wiki/MEAN_%28software_bundle%29" target="_blank">MEAN</a> stack.
+            Try it live on <a href="http://tbtc.herokuapp.com/" target="_blank">Heroku</a>. Explore source code on <a
+              href="https://github.com/Em-Ant/book-club">GitHub</a>.
+          </p>
+          <ul class="item-details">
+            <li>
+              <strong>
+                Requirement for the <a href="http://www.freecodecamp.com" target="_blank">freeCodeCamp</a> course
+              </strong>
+            </li>
+            <li>
+              <strong>October 2015
+              </strong>
+            </li>
+            <li>
+              <strong>Node, Express, Mongoose, Angular, Bootstrap
+              </strong>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row pfolio-item">
+        <div class="col-sm-4">
+          <a href="http://nightzone.herokuapp.com/" target="_blank" alt="Nightlife coordination project on Heroku">
+            <img src="./images/nzone.jpg" alt="Nightlife coordination project on Heroku"
+              class="img-responsive img-centered" />
+          </a>
+        </div>
+        <div class="col-sm-8 item-info">
+          <h3>Nightzone</h3>
+          <p>
+            Nightlife coordination app, built with React, MongoDB, Node and Express.
+            Features Twitter login, and a custom responsive design. Powered by the <a
+              href="http://www.yelp.com">Yelp</a> search API.
+            Try it live on <a href="http://nightzone.herokuapp.com/" target="_blank">Heroku</a>. Explore source code on
+            <a href="https://github.com/Em-Ant/fcc-nightzone">GitHub</a>.</p>
+          </p>
+          <ul class="item-details">
+            <li>
+              <strong>
+                Requirement for the <a href="http://www.freecodecamp.com" target="_blank">freeCodeCamp</a> course
+              </strong>
+            </li>
+            <li>
+              <strong>February 2016
+              </strong>
+            </li>
+            <li>
+              <strong>Express, Mongo, React, Twitter OAuth, Yelp API
+              </strong>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row pfolio-item">
+        <div class="col-sm-4">
+          <a href="http://pic-terest.herokuapp.com/" target="_blank" alt="Pinterest clone project on Heroku">
+            <img src="./images/pict.jpg" alt="Pinterest clone project on Heroku" class="img-responsive img-centered" />
+          </a>
+        </div>
+        <div class="col-sm-8 item-info">
+          <h3>Picterest</h3>
+          <p>
+            Pinterest-like web app, built with Bootstrap, React, MongoDB, Node and Express. You can submit links to you
+            favorite images.
+            Also features a link liking system. The eye-catching animated grid layout is powered by <a
+              href="http://masonry.desandro.com/">Masonry</a>.
+            Try it live on <a href="http://pic-terest.herokuapp.com/" target="_blank">Heroku</a>. Explore source code on
+            <a href="https://github.com/Em-Ant/pic-terest">GitHub</a>.</p>
+          </p>
+          <ul class="item-details">
+            <li>
+              <strong>
+                Requirement for the <a href="http://www.freecodecamp.com" target="_blank">freeCodeCamp</a> course
+              </strong>
+            </li>
+            <li>
+              <strong>February 2016
+              </strong>
+            </li>
+            <li>
+              <strong>Express, Mongo, React, Twitter OAuth, Masonry
+              </strong>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 more-stuff">
+          <p class="text-center">More stuff on <a href="http://codepen.io/Em-Ant/" target="_blank"
+              title="Em Ant on Codepen">Codepen</a> and <a href="http://www.freecodecamp.com/Em-Ant"
+              title="Em Ant on freeCodeCamp">freeCodeCamp</a>.</p>
+        </div>
+      </div>
+    </div>
+    <div class="push"></div>
+  </div>
+  <footer class="noshow">
+    <h3>Design &amp; Development by EmAnt, using <a href="http://en.wikipedia.org/wiki/Free_and_open-source_software"
+        alt="Free Open Source Software" title="Free Open Source Software">FOSS</a> - Background Image from <a
+        href="https://pixabay.com/">PIXABAY</a> - Copyright &copy;2015 by EmAnt</h3>
+  </footer>
 
 
 
 
 
 
-    <!-- build:js(.) scripts/vendor.js -->
-    <!-- bower:js -->
-    <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <script src="/bower_components/jquery-validation/dist/jquery.validate.js"></script>
-    <script src="/bower_components/waitForImages/src/jquery.waitforimages.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
+  <!-- build:js(.) scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="/bower_components/jquery/dist/jquery.js"></script>
+  <script src="/bower_components/jquery-validation/dist/jquery.validate.js"></script>
+  <script src="/bower_components/waitForImages/src/jquery.waitforimages.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
 
 
-    <!-- build:js(.) scripts/plugins.js -->
-    <script src="/bower_components/bootstrap/js/affix.js"></script>
-    <script src="/bower_components/bootstrap/js/alert.js"></script>
-    <script src="/bower_components/bootstrap/js/dropdown.js"></script>
-    <script src="/bower_components/bootstrap/js/tooltip.js"></script>
-    <script src="/bower_components/bootstrap/js/modal.js"></script>
-    <script src="/bower_components/bootstrap/js/transition.js"></script>
-    <script src="/bower_components/bootstrap/js/button.js"></script>
-    <script src="/bower_components/bootstrap/js/popover.js"></script>
-    <script src="/bower_components/bootstrap/js/carousel.js"></script>
-    <script src="/bower_components/bootstrap/js/scrollspy.js"></script>
-    <script src="/bower_components/bootstrap/js/collapse.js"></script>
-    <script src="/bower_components/bootstrap/js/tab.js"></script>
-    <!-- endbuild -->
+  <!-- build:js(.) scripts/plugins.js -->
+  <script src="/bower_components/bootstrap/js/affix.js"></script>
+  <script src="/bower_components/bootstrap/js/alert.js"></script>
+  <script src="/bower_components/bootstrap/js/dropdown.js"></script>
+  <script src="/bower_components/bootstrap/js/tooltip.js"></script>
+  <script src="/bower_components/bootstrap/js/modal.js"></script>
+  <script src="/bower_components/bootstrap/js/transition.js"></script>
+  <script src="/bower_components/bootstrap/js/button.js"></script>
+  <script src="/bower_components/bootstrap/js/popover.js"></script>
+  <script src="/bower_components/bootstrap/js/carousel.js"></script>
+  <script src="/bower_components/bootstrap/js/scrollspy.js"></script>
+  <script src="/bower_components/bootstrap/js/collapse.js"></script>
+  <script src="/bower_components/bootstrap/js/tab.js"></script>
+  <!-- endbuild -->
 
 
-    <!-- build:js scripts/main.js -->
-    <script src="scripts/main.js"></script>
-    <!-- endbuild -->
+  <!-- build:js scripts/main.js -->
+  <script src="scripts/main.js"></script>
+  <!-- endbuild -->
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='https://www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>
-  </body>
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+    (function (b, o, i, l, e, r) {
+      b.GoogleAnalyticsObject = l; b[l] || (b[l] =
+        function () { (b[l].q = b[l].q || []).push(arguments) }); b[l].l = +new Date;
+      e = o.createElement(i); r = o.getElementsByTagName(i)[0];
+      e.src = 'https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e, r)
+    }(window, document, 'script', 'ga'));
+    ga('create', 'UA-XXXXX-X'); ga('send', 'pageview');
+  </script>
+</body>
+
 </html>
