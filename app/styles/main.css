@@ -311,7 +311,7 @@ footer a:hover {
   }
 }
 
-@media screen and (max-height: 640px) {
+@media screen and (max-height: 720px) {
   .ul-inline {
     display: inline-block;
     margin-left: 1px;
@@ -332,6 +332,6 @@ footer a:hover {
     height: 40px;
   }
   footer h3 {
-    top: 0;
+    top: 8px;
   }
 }
