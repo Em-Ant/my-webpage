@@ -9,14 +9,23 @@
 
 "use strict";
 
+require("jquery.waitforimages");
+require("jquery-validation");
+
+require("bootstrap");
+require("bootstrap/dist/css/bootstrap.min.css");
+
+require("../styles/main.css");
+
 $(document).ready(function () {
   // makes sure the whole site is loaded
 
-  function loadPfolio(e) {
+  function loadPortfolio(e) {
     if (e) {
       e.preventDefault();
       window.location.hash = "#/portfolio";
     }
+    $("#bg").animate({ opacity: 1 }, 1000);
     $("#home_cont").fadeOut(800, function () {
       $("#pfolio-cont").scrollTop(0).fadeIn(600);
     });
@@ -34,7 +43,7 @@ $(document).ready(function () {
 
   function checkHash() {
     if (window.location.hash === "#/portfolio") {
-      loadPfolio();
+      loadPortfolio();
     } else {
       window.location.hash = "";
       backHome();
@@ -48,10 +57,10 @@ $(document).ready(function () {
         window.onhashchange = checkHash;
 
         if (window.location.hash === "#/portfolio") {
-          loadPfolio();
+          loadPortfolio();
         }
       } else {
-        $("#pfolio_link").click(loadPfolio);
+        $("#pfolio_link").click(loadPortfolio);
         $("#back").click(backHome);
       }
 
@@ -106,6 +115,7 @@ $(document).ready(function () {
    */
 
   var validator = $("#contacts-form").validate({
+    onkeyup: false,
     rules: {
       email: {
         required: true,
@@ -129,7 +139,7 @@ $(document).ready(function () {
         .addClass(validClass);
     },
 
-    onkeyup: function (element) {
+    onfocusout: function (element) {
       $(element).valid();
     },
     errorPlacement: function (error, element) {

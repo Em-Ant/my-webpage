@@ -28,17 +28,6 @@ body {
   background-size: cover;
 }
 
-/* Preloader */
-#preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: white; /* change if the mask should have another color then white */
-  z-index: 99; /* makes sure it stays on top */
-}
-
 .code {
   font-family: monospace;
 }
@@ -157,6 +146,25 @@ body {
 html,
 body {
   height: 100%;
+
+  /* Non-Standard, But More Styling-Capable Properties */
+  &::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #ffa400;
+    border-radius: 4px;
+  }
+  &::-webkit-scrollbar-track {
+    background: #1f1f1f;
+  }
+
+  /* Standardized Properties */
+  @supports not selector(::-webkit-scrollbar) {
+    scrollbar-color: #ffa400 transparent;
+    scrollbar-width: large;
+  }
 }
 
 .sticky-wrapper {
