@@ -71,6 +71,8 @@ body {
 #pfolio-cont {
   color: white;
   margin-top: 20px;
+  flex-grow: 1;
+  flex-shrink: 0;
 }
 
 #home_cont {
@@ -168,14 +170,12 @@ body {
 }
 
 .sticky-wrapper {
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  margin: 0 auto -80px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
-footer,
-.push {
+footer {
   height: 80px;
 }
 /*END STICKY FOOTER*/

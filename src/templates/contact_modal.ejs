@@ -1,0 +1,38 @@
+<div class="modal fade" id="contacts-modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close reset" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="exampleModalLabel">New message</h4>
+      </div>
+      <div class="modal-body">
+        <form id="contacts-form" novalidate="novalidate">
+          <div class="form-group" id="email-group">
+            <label for="email" class="control-label">From:</label>
+            <div class="input-group">
+              <span class="input-group-addon arial">@</span>
+              <input type="text" class="form-control arial" id="email-input" placeholder="Your email here"
+                name="email" />
+            </div>
+            <div id="email-err" class="err-label"></div>
+          </div>
+
+          <div class="form-group" id="message-group">
+            <label for="message" class="control-label">Message:</label>
+            <textarea class="form-control arial" id="message-text" placeholder="Your message here..."
+              name="message"></textarea>
+            <div id="message-err" class="err-label"></div>
+          </div>
+
+          <div class="modal-footer">
+            <div id="message-tx" class="err-label"></div>
+            <a type="button" href="#close" class="btn btn-default reset" data-dismiss="modal">Close</a>
+            <input type="submit" class="btn btn-primary" value="Send Message" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

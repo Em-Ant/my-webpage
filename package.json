@@ -16,14 +16,15 @@
   "license": "ISC",
   "devDependencies": {
     "bootstrap": "^3.4.1",
-    "copy-webpack-plugin": "^12.0.2",
     "css-loader": "^7.1.1",
+    "html-loader": "^5.0.0",
     "html-webpack-plugin": "^5.6.0",
     "jquery": "^3.7.1",
     "jquery-validation": "^1.20.0",
     "jquery.waitforimages": "^2.4.0",
     "mini-css-extract-plugin": "^2.9.0",
     "style-loader": "^4.0.0",
+    "template-ejs-loader": "^0.9.4",
     "webpack": "^5.91.0",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.0.4"
