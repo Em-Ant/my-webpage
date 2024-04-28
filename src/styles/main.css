@@ -164,7 +164,7 @@ body {
 
   /* Standardized Properties */
   @supports not selector(::-webkit-scrollbar) {
-    scrollbar-color: #ffa400 transparent;
+    scrollbar-color: #ffa400 rgba(0, 0, 0, 0.3);
     scrollbar-width: large;
   }
 }
