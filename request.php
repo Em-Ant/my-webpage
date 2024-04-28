@@ -14,7 +14,7 @@ if (isset($_POST['action']) && !empty($_POST['action'])) {
 
 			if (filter_var($email, FILTER_VALIDATE_EMAIL) !== false) {
 
-				$admin_email = "admin@example.com";
+				$admin_email = "__admin_email__";
 
 				$message = filter_var($_POST['message'], FILTER_SANITIZE_STRING);
 
