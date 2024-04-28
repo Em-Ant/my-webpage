@@ -1,0 +1,33 @@
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    if: "!contains(toJSON(github.event.commits.*.message), '[skip-ci]')"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v3
+        with:
+          version: 9
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: "pnpm"
+      - run: pnpm i
+      - run: pnpm build
+      - run: |
+          cp ./request.php ./dist && \
+          EMAIL=${{ secrets.ADMIN_EMAIL }} && \
+          sed -i "s/__admin_email__/${EMAIL}/g" ./dist/request.php
+      - name: Simple FTP deploy
+        uses: sebastianpopp/ftp-action@releases/v2
+        with:
+          host: ${{ secrets.FTP_HOST }}
+          user: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PWD }}
+          localDir: ./dist
+          remoteDir: home
