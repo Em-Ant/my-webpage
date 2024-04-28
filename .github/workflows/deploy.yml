@@ -31,3 +31,4 @@ jobs:
           password: ${{ secrets.FTP_PWD }}
           localDir: ./dist
           remoteDir: home
+          options: "--delete"

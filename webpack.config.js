@@ -30,6 +30,12 @@ const config = {
       template: "./src/index.ejs",
       minify: true,
     }),
+    new HtmlWebpackPlugin({
+      template: "./src/404.ejs",
+      filename: "404.html",
+      minify: true,
+      inject: false,
+    }),
   ],
   module: {
     rules: [
