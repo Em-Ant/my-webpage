@@ -13,7 +13,7 @@ const config = {
   entry: "./src/scripts/main.js",
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "[name].[chunkhash:8].js",
+    filename: "[name].[contenthash:8].js",
     clean: true,
   },
   devServer: {
@@ -72,7 +72,7 @@ module.exports = () => {
 
     config.plugins.push(
       new MiniCssExtractPlugin({
-        filename: "[name].[chunkhash:8].css",
+        filename: "[name].[contenthash:8].css",
       })
     );
   } else {
