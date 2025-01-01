@@ -1,50 +1,49 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Welcome to Emanuele Antonelli's landing page. I collect here all the links to my web development projects and coding activities on the web."
+    />
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="description"
-    content="Welcome to Emanuele Antonelli's landing page. I collect here all the links to my web development projects and coding activities on the web." />
+    <title>Emanuele's Webpage</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Emanuele's Webpage</title>
-  <meta name="description" content="" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="./images/favicon.ico" />
+    <link rel="apple-touch-icon" href="./images/apple-touch-icon.png" />
+    <style>
+      #preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: white;
+        z-index: 99;
+      }
+    </style>
+  </head>
 
-  <link rel="shortcut icon" href="./images/favicon.ico" />
-  <link rel="apple-touch-icon" href="./images/apple-touch-icon.png" />
-  <style>
-    #preloader {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: white;
-      z-index: 99;
-    }
-  </style>
-</head>
-
-<body>
-  <!--[if lt IE 10]>
+  <body>
+    <!--[if lt IE 10]>
       <p class="browsehappy">
         You are using an <strong>outdated</strong> browser. Please
-        <a href="http://browsehappy.com/">upgrade your browser</a> to improve
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
         your experience.
       </p>
     <![endif]-->
 
-  <div id="preloader">
-    <div id="status">&nbsp;</div>
-  </div>
-  <div id="bg"></div>
+    <div id="preloader">
+      <div id="status">&nbsp;</div>
+    </div>
+    <div id="bg"></div>
 
-  <div class="container sticky-wrapper">
-    <%- include('./templates/contact_modal') %>
-      <%- include('./templates/home') %>
-        <%- include('./templates/portfolio') %>
-          <%- include('./templates/footer') %>
-  </div>
-</body>
-
+    <div class="container sticky-wrapper">
+      <%- include('./templates/contact_modal') %> <%-
+      include('./templates/home') %> <%- include('./templates/portfolio') %> <%-
+      include('./templates/footer') %>
+    </div>
+  </body>
 </html>
